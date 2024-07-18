@@ -162,7 +162,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 9%;
+    top: 8%;
     z-index: 500;
 }
 
@@ -452,6 +452,11 @@
     transition: all .5s;
 }
 
+
+.project-card button:hover{
+    background-color: rgb(210, 54, 210);
+}
+
 .project1{
     background-image: url(images/sereneBeauty.png);
     background-repeat: no-repeat;
@@ -533,7 +538,7 @@
 
 
 .project6{
-    background-image: url(images/massage-site.jpg);
+    background-image: url(images/rossstores.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -542,7 +547,7 @@
 }
 
 .project6:hover{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/massage-site.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/rossstores.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -579,6 +584,22 @@
     background-repeat: no-repeat;
 }
 
+.project9{
+    background-image: url(images/ps5-review.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .5s;
+}
+
+
+
+.project9:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/ps5-review.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .tab-2-content{
     display: none;
