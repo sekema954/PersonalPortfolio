@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 0 15px 0 15px;
+    z-index: 2000;
+}
+
+/**classlist to set navbar to fixed*/
+.fixedNavbar{
+    position: fixed;
+    width: 100%;
+}
+
+
+.right-nav{
+    display: flex;
+}
+
+
+.right-nav>div{
+    margin: 20px;
+}
+
+.right-nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.right-nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    position: relative;
+}
+
+.right-nav ul li a::before {
+    content: ""; 
+    position: absolute;
+    bottom: -4px; /* Adjust position to sit below the link */
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    transition: width 0.3s ease-out; /* Transition for width change */
+}
+
+.right-nav ul li a:hover::before {
+    width: 100%; /* Expand width on hover */
+}
+
+.social-links .fa {
+    margin: 15px;
+    width: 2rem;
+    height: 2rem;
+    border: solid white;
+    border-radius: 5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+
+.page-links{
+    display: flex;
+    align-items: center;
+}
+
+
+.lets-connect-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lets-connect-btn button{
+    cursor: pointer;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    border:  solid white 1px;
+    position: relative;
+    transition: all .5s;
+}
+
+.lets-connect-btn button:hover{
+    background-color: white;
+    color: black;
+}
+
+.fa{
+    transition: all .4s;
+}
+
+
+.fa-instagram:hover{
+    color: burlywood;
+    background-color: white;
+}
+
+.fa-facebook:hover{
+    color: rgb(50, 92, 216);
+    background-color: white;
+}
+
+.fa-linkedin:hover{
+    color: rgb(27, 85, 211);
+    background-color: white;
+}
+
+.menu-bar{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    width: 2.2rem;
+    height: 4px;
+    background-color: white;
+    margin: 4px;
+    transition: all .50s;
+}
+
+.change .bar1{
+    transform: translate(0, 10px)rotate(-45deg);
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    transform: translate(0, -6px)rotate(45deg);
+}
+
+
+.dropdown{
+    width: 100%;
+    height: 0rem;
+    background-color: black;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 9%;
+    z-index: 500;
+}
+
+
+/*classlist to hide drop links*/
+.dropdown-links{
+    display: none;
+}
+
+
+/*classlist to show drop links*/
+.showDropLinks{
+    display: inline-block;
+}
+
+.dropdown ul li{
+    margin: 15px;
+    list-style: none;
+    text-align: center;
+}
+
+.dropdown ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.change-height{
+    height: 20rem;
+}
+
+#home{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/space-background.jpg);
+    width: 100vw;
+}
+
+.home-grid-wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+}
+
+
+.home-grid-col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image-box{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 30rem;
+    border: solid black 1px;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/IMG_6937_1.jpg);
+}
+
+.welcome-card{
+    border: solid white;
+    background: radial-gradient(circle at 10% 20%, rgb(134, 47, 199) 0%, rgb(235, 56, 137) 90%);
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+ .welcome-card p{
+    color: white;
+    font-weight: 600;
+}
+
+.home-grid-col1{
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-grid-card-wrapper>div{
+    color: white;
+    margin: 20px;
+
+}
+
+
+.resume-download>*{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/**skills*/
+
+#skills{
+    background: radial-gradient(circle at 10% 20%, rgb(134, 47, 199) 0%, rgb(235, 56, 137) 90%);
+    color: white;
+}
+
+.skills-header-wrapper>div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.skills-card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.skills-card{
+    width: 80vw;
+    border-radius: 50px;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,0.4));
+    padding: 0 20px 20px 20px;
+}
+
+
+.skills-circle-wrapper{
+    width: 100%;
+    height: 20rem;
+    margin-top: 10%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 0 20px 0 20px;
+}
+
+
+.skills-arrow{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+}
+
+.skills-arrow .fa{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
+}
+
+.skills-arrow .fa:hover{
+    background-color: black;
+    color: plum;
+}
+
+
+.outer-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+.inner-circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+}
+
+
+.skill1{
+    background: conic-gradient(rgb(125, 42, 432)340deg, rgb(237, 237, 237)0deg);
+}
+
+
+.skill2{
+    background: conic-gradient(rgb(125, 42, 432)320deg, rgb(237, 237, 237)0deg);
+}
+
+
+#projects{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+
+.projects-header-wrapper>div{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+
+.projects-tab{
+    display: flex;
+    justify-content: center;
+}
+
+.tab{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+.tab1{
+ 
+    border-radius: 50px 0 0 50px;
+}
+
+
+
+.tab3{
+    border-radius: 0 50px 50px  0;
+}
+
+.active-tab{
+    background: radial-gradient(circle at 10% 20%, rgb(134, 47, 199) 0%, rgb(235, 56, 137) 90%) !important;
+}
+
+.projects-container-flex{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.project-centered>div{
+    margin: 50px;
+}
+
+
+.project-card{
+    width: 70vw;
+    height: 20rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.project-btns{
+    position: absolute;
+    bottom: 5%;
+    display: none;
+}
+
+
+.project-card button{
+    color: black;
+    width: 120px;
+    height: 35px;
+    background-color: plum;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+    color: white;
+    transition: all .5s;
+}
+
+.project1{
+    background-image: url(images/sereneBeauty.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .5s;
+}
+
+.project1:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/sereneBeauty.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project2{
+    background-image: url(images/Furniro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .5s;
+}
+
+.project2:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/Furniro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.project3{
+    background-image: url(images/nailedIt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .5s;
+}
+
+.project3:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/nailedIt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.project4{
+    background-image: url(images/animeLib.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .5s;
+}
+
+.project4:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/animeLib.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.project5{
+    background-image: url(images/ps5-review.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .5s;
+}
+
+.project5:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/ps5-review.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.project6{
+    background-image: url(images/massage-site.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .5s;
+}
+
+.project6:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/massage-site.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.project7{
+    background-image: url(images/daycare-site.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .5s;
+}
+
+.project7:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/daycare-site.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.project8{
+    background-image: url(images/hair-site.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .5s;
+}
+
+.project8:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/hair-site.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.tab-2-content{
+    display: none;
+}
+
+.tab-3-content{
+    display: none;
+}
+
+
+
+/****contact section***/
+
+#contact{
+    width: 100%;
+    background-color: #6617cb;
+    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    color: white;
+    padding: 0 20px 0 20px;
+}
+
+@media(max-width: 975px){
+    #contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .contact-lottie iframe{
+        width: 250px !important;
+        height: 250px !important;
+    } 
+}
+
+.contact-lottie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact iframe{
+    border: none;
+    width: 500px;
+    height: 500px;
+}
+
+.contact-title{
+    margin-top: 60px;
+    padding-left: 20px;
+}
+
+#contact input{
+    width: 220px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid white;
+    padding-left: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#contact input::placeholder, #contact textarea::placeholder{
+    color: white;
+}
+
+#contact input:focus, #contact textarea:focus{
+    outline: none;
+}
+
+#contact textarea{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: transparent;
+    border: solid white;
+    color: white;
+    font-weight: 700;
+}
+
+#contact-form>div{
+    margin: 20px;
+}
+
+#contact input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 0;
+    padding: 0;
+    transition: all .50s;
+}
+
+
+#contact input[type=submit]:hover{
+    background-color: purple;
+    color: white;
+}
+
+
+/***copyright section****/
+
+#copyright{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 5px 20px;
+}
+
+
+#copyright .social-links{
+    display: inline-block !important;
+}
+.watermark{
+    color: white;
+}
+
+#copyright .logo{
+    color: white;
+}
+
