@@ -105,3 +105,27 @@ tab3.addEventListener('click', ()=>{
     tabContent2.style.display = ' none';
     tabContent1.style.display = 'none';
 })
+
+
+
+
+//carpuse ski;;s
+
+const rightArrow = document.querySelector(".skills-arrow .fa-arrow-right");
+rightArrow.addEventListener("click", rightArrowClicked);
+
+function rightArrowClicked(){
+    const skillsWrapper = document.querySelector(".skills-circle-wrapper");
+    skillsWrapper.scrollLeft += 260;
+}
+
+
+const leftArrow = document.querySelector(".skills-arrow .fa-arrow-left");
+leftArrow.addEventListener("click", leftArrowClicked);
+
+function leftArrowClicked(){
+    const skillsWrapper = document.querySelector(".skills-circle-wrapper");
+    skillsWrapper.scrollLeft += -260;
+}
+
+

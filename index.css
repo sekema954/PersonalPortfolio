@@ -304,7 +304,7 @@
     display: flex;
     justify-self: center;
     align-items: center;
-    overflow-x: scroll;
+    overflow-x: hidden;
     padding: 0 20px 0 20px;
 }
 
@@ -473,7 +473,7 @@
 }
 
 .project2{
-    background-image: url(images/Furniro.png);
+    background-image: url(images/lesly_nailSite.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -482,7 +482,7 @@
 }
 
 .project2:hover{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/Furniro.png);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/lesly_nailSite.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -584,7 +584,7 @@
     background-repeat: no-repeat;
 }
 
-.project9{
+/**.project9{
     background-image: url(images/ps5-review.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -599,7 +599,7 @@
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/ps5-review.webp);
     background-size: cover;
     background-repeat: no-repeat;
-}
+}***/
 
 .tab-2-content{
     display: none;
