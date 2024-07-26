@@ -216,12 +216,12 @@
     align-items: center;
 }
 
-.home-image-box{
+/**.home-image-box{
     width: 20rem;
     height: 20rem;
     border-radius: 30rem;
     border: solid black 1px;
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/IMG_6937_1.jpg);
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/IMG_6937_1.jpg);**/
 }
 
 .welcome-card{
